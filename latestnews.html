@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>News Page</title>
+<link rel="stylesheet" type="text/css" href="css.info/style.css">
+  </head>
+  <body>
+      
+  <div class="container">
+    <div class="main">
+    <nav>
+      <div class="logo">
+        <img src="images/homelogo.png">
+        <h1>YGSTAN ALERT!</h1>
+      </div>
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="aboutus.html">ABOUT US</a></li>
+        <li><a href="gallery.html">GALLERY</a></li>
+        <li><a href="#">LATEST NEWS</a></li>
+        <li><a href="signin.html">SIGN IN</a></li>
+      </ul>
+    </nav>
+  </div><br><br>
+
+<div class="bk"><br> 
+  <h3>YG ARTISTS</h3><br>
+
+<div class="sl">
+  <script>
+    var i = 0;            //start point
+    var images = [];
+    var time = 2500;
+
+
+    // Image List
+    images[0] = 'images/slider.jpg';
+    images[1] = 'images/slider1.png';
+    images[2] = 'images/slider2.jpg';
+    images[3] = 'images/slider3.png';
+    images[4] = 'images/slider4.jpg';
+    images[5] = 'images/slider5.jpg';
+    images[6] = 'images/slider6.jpeg';
+    images[7] = 'images/slider7.jpg';
+
+
+
+    //change Image
+    function changeImg(){
+      document.slide.src = images[i];
+
+      if(i < images.length - 1){
+        i++;
+      } else {
+        i = 0;
+      }
+      setTimeout("changeImg()", time);
+    }
+    window.onload = changeImg;
+  </script>
+<img name="slide" width="600" height="400">
+  <div class="text">
+
+  <p>Interested in hiphop style then "WELCOME TO YGSTAN COMMUNITY"</p><br>
+  
+  <p>Do you want to know more about YG artist? Interested? <a href="moreinfo.html" target="_blank">{more}</a></p>
+  </div>
+  </div>
+
+    <div class = "footer">
+    <br>
+    <j>YG ENTERTAINMENT<br>
+    Privacy Policy | Terms of Use</j><br> 
+      <t>Copyright &copy; 2020 YG entertainment</t><br/>
+      
+      <p align="left" style="top:0px; position: relative; left:5px;"> Facebook </p> 
+      <p align="left" style="top:-25px; position: relative; left:90px;">
+      <a href="https://www.facebook.com/" target="_blank"> <img src="images/fblogo.jpg" width="30px"> </a> </p>
+      
+      <p align="left" style="top:0px; position: relative; left:5px;"> Instagram </p> 
+      <p align="left" style="top:-25px; position: relative; left:90px;">
+      <a href="https://www.instagram.com/" target="_blank"> <img src="images/instalogo.png" width="30px"> </a> </p>
+
+      <p align="left" style="top:0px; position: relative; left:5px;"> Twitter </p> 
+      <p align="left" style="top:-25px; position: relative; left:90px;">
+      <a href="https://twitter.com/" target="_blank"> <img src="images/twitterlogo.png" width="30px"> </a> </p>
+      
+
+        <a href="index.html">|HOME|</a>
+        <a href="aboutus.html">|ABOUT US|</a>
+        <a href="gallery.html">|GALLERY|</a>
+        <a href="latestnews.html">|LATEST NEWS|</a>
+        <a href="signin.html">|SIGN IN|</a>
+  </div>
+  </div>
+
+    <script src="app.js"></script>
+
+</body>
+</html>

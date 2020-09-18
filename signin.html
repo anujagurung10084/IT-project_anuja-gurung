@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <title>Sign in-Page</title>
+    <link rel="stylesheet" type="text/css" href="css.info/style.css">
+
+  </head>
+  <body>
+  <div class="body">  
+    <div class="container">
+      <div class="main">
+        <nav>
+          <div class="logo">
+            <img src="images/homelogo.png">
+            <h1>YGSTAN ALERT!</h1>
+          </div>
+
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="aboutus.html">ABOUT US</a></li>
+        <li><a href="gallery.html">GALLERY</a></li>
+        <li><a href="latestnews.html">LATEST NEWS</a></li>
+        <li><a href="#">SIGN IN</a></li>
+      </ul>
+
+      </nav>
+
+        <div class="contact-form"><br><br><br>
+          <h1> Welcome to our fanclub!</h1>
+        <div id="errormsg"></div>
+          <form name="myform" id="myform" action="index.html" method="post" onsubmit="return validation()">
+        <div class="input-field">
+          <input type="text" placeholder="Name" name="name">
+        </div>
+        <div class="input-field">
+          <input type="email" placeholder="youremail@example.com" name="email" required="required">
+        </div>
+        <div class="input-field">
+          <input type="text" placeholder="Address" name="address">
+        </div>
+        <div class="input-field">
+          <input type="text" placeholder="Phone-Number" name="phoneno">
+        </div>
+        <div class="input-field">
+        <textarea id="message" placeholder="Message"></textarea>
+        </div>
+
+        <div class="btn">
+        <input type="submit" onsubmit="return submit()" >
+        </div>
+        </div>
+
+      </div>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
